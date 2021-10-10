@@ -115,6 +115,7 @@ function createTable(data) {
 
 // Fetch data
 $.when(parcelPromise, buildingPromise).then(function(parcelData, buildingData) {
+    $('#loading').remove();
     parcelData = parcelData[0];
     buildingData = buildingData[0];
 
