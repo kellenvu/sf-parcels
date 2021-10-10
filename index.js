@@ -72,44 +72,44 @@ function createTable(data) {
 		pagination: 'local',
 		paginationSize: 25,
 		tooltips: true,
-	    columns:[{
-	    		title: 'Parcel Address',
-	    		field: 'full_address',
-	    		sorter: 'string',
-	    		headerFilter: 'input'
-    		}, {
-	    		title: 'Parcel Number',
-	    		field: 'blklot',
-	    		sorter: 'string',
-	    		headerFilter: 'input'
-    		}, {
-	    		title: 'Zoning',
-	    		field: 'zoning_code',
-	    		sorter: 'string',
-	    		headerFilter: 'select',
-	    		headerFilterParams: { values: getZoningCodes(zoningCodes) }
-    		}, {
-	    		title: 'Building Area',
-	    		field: 'bldgsqft',
-	    		sorter: 'number',
-	    		headerFilter: minMaxFilterEditor,
-	    		headerFilterFunc: minMaxFilterFunction,
-	    		headerFilterLiveFilter: false
-    		}, {
-	    		title: 'Year Built',
-	    		field: 'yrbuilt',
-	    		sorter: 'number',
-	    		headerFilter: minMaxFilterEditor,
-	    		headerFilterFunc: minMaxFilterFunction,
-	    		headerFilterLiveFilter: false
-    		}, {
-	    		title: 'Land Use',
-	    		field: 'landuse',
-	    		sorter: 'string',
-	    		headerFilter: 'select',
-	    		headerFilterParams: { values: true }
-    		}
-    	],
+		columns:[{
+				title: 'Parcel Address',
+				field: 'full_address',
+				sorter: 'string',
+				headerFilter: 'input'
+			}, {
+				title: 'Parcel Number',
+				field: 'blklot',
+				sorter: 'string',
+				headerFilter: 'input'
+			}, {
+				title: 'Zoning',
+				field: 'zoning_code',
+				sorter: 'string',
+				headerFilter: 'select',
+				headerFilterParams: { values: getZoningCodes(zoningCodes) }
+			}, {
+				title: 'Building Area',
+				field: 'bldgsqft',
+				sorter: 'number',
+				headerFilter: minMaxFilterEditor,
+				headerFilterFunc: minMaxFilterFunction,
+				headerFilterLiveFilter: false
+			}, {
+				title: 'Year Built',
+				field: 'yrbuilt',
+				sorter: 'number',
+				headerFilter: minMaxFilterEditor,
+				headerFilterFunc: minMaxFilterFunction,
+				headerFilterLiveFilter: false
+			}, {
+				title: 'Land Use',
+				field: 'landuse',
+				sorter: 'string',
+				headerFilter: 'select',
+				headerFilterParams: { values: true }
+			}
+		],
 	});
 }
 
