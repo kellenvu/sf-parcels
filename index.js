@@ -70,7 +70,7 @@ function createTable(data) {
         layout: 'fitColumns',
         responsiveLayout: 'hide',
         pagination: 'local',
-        paginationSize: 25,
+        paginationSize: 19,
         tooltips: true,
         columns:[{
                 title: 'Parcel Address',
